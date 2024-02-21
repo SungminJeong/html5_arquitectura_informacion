@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Web</title>
+</head>
+
+<body>
+  <header style="text-align: center;"><h1>Sungmin's Chocolate Shop</h1></header>
+  <nav style="display: flex; border-bottom: 1px solid black;" >
+    <div style="display: flex; margin-left: 80px; margin-bottom: 40px;">
+      <div style="margin-left: 200px;"><a href="#">Home</a></div>
+      <div style="margin-left: 200px;"><a href="#">Products</a></div>
+      <div style="margin-left: 200px;"><a href="#">About Us</a></div>
+      <div style="margin-left: 200px;"><a href="#">Contact</a></div>
+    </div>
+    <div style="margin-left: auto;">
+      <label for="ID">Name</label>
+      <input type="text" id="ID" placeholder="name">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password">
+      <input type="submit" name="submit" id="submit" value="Log In">
+    </div>
+  </nav>
+
+  <main style="margin: 0 auto;">
+    <section style="text-align: center;">
+      <img src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2021/09/09/6139d1e5a3535.jpeg" alt="chocolate" style="height: 400px; width: auto">
+    </section>
+    <section>
+      <form action="buscar_products.php" method="post">
+        <input list="productolist" name="productolist" placeholder="search products">
+        <datalist id="productolist">
+          <option value="item1">item1</option>
+          <option value="item2">item2</option>
+          <option value="item3">item3</option>
+          <option value="item4">item4</option>
+          <option value="item5">item5</option>
+          <option value="item6">item6</option>
+        </datalist>
+        <input type="submit" value="search">
+      </form>
+    </section>
+
+    <section style="display: flex; text-align: center; margin-top: 50px;">
+      <article style="text-align: center; padding: 30px;">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_363,c_limit/1e7bcb0d-1dd8-4119-b996-c02264e77fbd/3-beneficios-del-chocolate-negro-para-la-salud-seg%C3%BAn-nutricionistas.jpg" alt="item1" style="border: 1px solid #000; height: 200px">
+        <h2 style="text-align: center;">item1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipimilique assumenda, voluptatem vero in ipsum aliquid illo cupiditate exercitationem possimus.sicing elit. Eius distinctio sed dicta nemo, magnam, quam officia sapiente architecto beatae si</p>
+        <button>Order</button>
+      </article>
+      <article style="text-align: center; padding: 30px;">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/heap-of-chocolate-bars-royalty-free-image-1625648194.jpg?crop=0.643xw:1.00xh;0.169xw,0&resize=1200:*" alt="item2" style="border: 1px solid #000; height: 200px">
+        <h2 style="text-align: center;">item2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipimilique assumenda, voluptatem vero in ipsum aliquid illo cupiditate exercitationem possimus.sicing elit. Eius distinctio sed dicta nemo, magnam, quam officia sapiente architecto beatae si</p>
+        <button>Order</button>
+      </article>
+      <article style="text-align: center; padding: 30px;">
+        <img src="https://wickedkitchen.com/wp-content/uploads/2021/03/Untitled-1-4.jpg" alt="item3" style="border: 1px solid #000; height: 200px">
+        <h2 style="text-align: center;">item3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipimilique assumenda, voluptatem vero in ipsum aliquid illo cupiditate exercitationem possimus.sicing elit. Eius distinctio sed dicta nemo, magnam, quam officia sapiente architecto beatae si</p>
+        <button>Order</button>
+      </article>
+    </section>
+
+    <section style="display: flex; text-align: center; margin-top: 50px;">
+      <article style="text-align: center; padding: 30px;">
+        <img src="https://turris.es/523-large_default/tableta-de-chocolate-con-leche.jpg" alt="item4" style="border: 1px solid #000; height: 200px">
+        <h2 style="text-align: center;">item4</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipimilique assumenda, voluptatem vero in ipsum aliquid illo cupiditate exercitationem possimus.sicing elit. Eius distinctio sed dicta nemo, magnam, quam officia sapiente architecto beatae si</p>
+        <button>Order</button>
+      </article>
+      <article style="text-align: center; padding: 30px;">
+        <img src="https://content-cocina.lecturas.com/medio/2018/07/19/mousse-chocolate-con-mandarina_00000000_231108103210_1200x1200.jpg" alt="item5" style="border: 1px solid #000; height: 200px">
+        <h2 style="text-align: center;">item5</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipimilique assumenda, voluptatem vero in ipsum aliquid illo cupiditate exercitationem possimus.sicing elit. Eius distinctio sed dicta nemo, magnam, quam officia sapiente architecto beatae si</p>
+        <button>Order</button>
+      </article>
+      <article style="text-align: center; padding: 30px;">
+        <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/ED822D13-5A38-41F8-A8D7-E4F71C504A87/Derivates/BC75D881-30E3-4143-B648-8C6F26BCEDAF.jpg" alt="item6" style="border: 1px solid #000; height: 200px">
+        <h2 style="text-align: center;">item6</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipimilique assumenda, voluptatem vero in ipsum aliquid illo cupiditate exercitationem possimus.sicing elit. Eius distinctio sed dicta nemo, magnam, quam officia sapiente architecto beatae si</p>
+        <button>Order</button>
+      </article>
+    </section>
+
+    <section style="margin-top: 80px;">
+      <h2>Contact us</h2>
+      <form action="/" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Nombre completo">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="name" placeholder="E-mail">
+
+        <label for="address">address:</label>
+        <input type="text" name="address" id="address" placeholder="address">
+
+        <input type="submit" value="submit">
+      </form>
+    </section>
+
+    <footer style="border-top: 1px black solid; margin-top: 10px;">
+      <form action="#" method="post">
+        <select name="lenguaje">
+          <option value="">Elige la idioma</option>
+          <option value="english">English</option>
+          <option value="español">Español</option>
+          <option value="coreano">한국어</option>
+          <option value="chino">中文</option>
+          <option value="japonesa">日本語</option>
+        </select>
+      </form>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p></p>
+    </footer>
+  </main>
+
+</body>
+</html>
