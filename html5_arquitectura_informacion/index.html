@@ -9,20 +9,20 @@
 <body>
   <header style="text-align: center;"><h1>Sungmin's Chocolate Shop</h1></header>
   <nav style="display: flex; border-bottom: 1px solid black;" >
-    <div style="display: flex; margin-left: 80px; margin-bottom: 40px;">
-      <div style="margin-left: 200px;"><a href="#">Home</a></div>
-      <div style="margin-left: 200px;"><a href="#">Products</a></div>
-      <div style="margin-left: 200px;"><a href="#">About Us</a></div>
-      <div style="margin-left: 200px;"><a href="#">Contact</a></div>
-    </div>
-    <div style="margin-left: auto;">
+    <ul style="display: flex; list-style-type: none; margin-left: 80px; margin-bottom: 40px; margin-top: auto;">
+      <li style="margin-left: 200px;"><a href="#">Home</a></li>
+      <li style="margin-left: 200px;"><a href="#">Products</a></li>
+      <li style="margin-left: 200px;"><a href="#">About Us</a></li>
+      <li style="margin-left: 200px;"><a href="#">Contact</a></li>
+    </ul>
+    <form style="margin-left: auto;">
       <label for="ID">Name</label>
       <input type="text" id="ID" placeholder="name">
 
       <label for="password">Password</label>
       <input type="password" id="password" placeholder="password">
       <input type="submit" name="submit" id="submit" value="Log In">
-    </div>
+    </form>
   </nav>
 
   <main style="margin: 0 auto;">
